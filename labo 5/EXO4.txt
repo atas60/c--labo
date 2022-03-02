@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a,som;
+	double nb;
+	cout << "entrez des réelles" << endl; cin>>a;
+	som=0;
+	nb=0;
+	while (a!=0) {
+		som=som+a; cin>>a;
+		nb++;
+
+	if (a==0) {
+		cout<<"la moyenne des entier est "<<som/(nb*1.0)<<endl;
+	}	
+else { cout<<"pas de moyenne"<<endl;}
+}
+	return 0;
+}

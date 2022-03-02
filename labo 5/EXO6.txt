@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a;
+	cout << "entrez un entier" << endl; cin>>a;
+	while (a>=1 && a<=20){
+
+		if (a%2==0){ cout<<"c'est un nombre pair"<<endl;
+		}
+		else{ cout<<"c'est un nombre impair"<<endl;
+		}
+		cin>>a;
+
+	}
+	return 0;
+}

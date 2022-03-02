@@ -1,0 +1,5 @@
+labo 4 question/reponse
+
+1) les negatifs, nul, et les réels
+2)oui il faut juste changer while (a<b)---->while (a>b)
+3)oui il faut juste changer une ligne for (int b(0); b < 10; b++)---->for (int b(0); b < 1000; b++)

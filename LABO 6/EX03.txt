@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	string nom,prod;
+	int quantite;
+	double total,prix,som;
+	char a;
+	cout<<"nom du client : "; cin>>nom;
+	
+	while (nom!="*") {
+		cout<<"produit : "; cin>>prod;
+		while (prod!="*") {
+		
+			cout<<"prix : "; cin>>prix;
+			cout<<"quantite"; cin>>quantite;
+			total=0;  som=(prix*quantite)+som; total=prix*quantite;
+			cout<<"prix total de l'article : "<<total<<"euro"<<endl;
+			cout<<" produit : ";
+			cin>>prod;
+		}
+		cout<<"prix total : "<<som<<endl;
+		cout<<"avez-vous une carte de fidelite o(ui) ou n(on) ? "<<endl;cin>>a; 
+
+		while (a!='o' && a!='O' && a!='n' && a!='N'){
+		cout<<"o(ui) ou n(on) ? SVP ! "<<endl;
+		cin>>a;
+		}
+		if (a=='O' || a=='o'){
+			cout<<"remise = "<<som/10<<endl;
+			cout<<" montant a payer "<<som-(som/10)<<endl;
+		}
+		else {
+			cout<<"montant a payer : "<<som<<endl;
+		}
+		som=0;
+		cout<<"nom du client : "; cin>>nom;
+	}
+	return 0;
+}

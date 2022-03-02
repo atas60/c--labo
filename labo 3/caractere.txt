@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main() {
+	char a;
+	cout << "entres un caractere" << endl; cin>>a;
+	if ( a>='A' && a<='Z')
+	{
+		cout <<" c'est une majuscule : "<<a<<endl;
+	}
+	else if (a>='a' && a<='z')
+	{
+		cout <<" c'est une minuscule : "<<a<<endl;
+	}
+	else if (a>='0' && a<='9')
+	{
+		cout <<" c'est un chiffre : "<<a<<endl;
+	}
+	else
+	{ cout<<" cest n'est pas dans la liste"<<endl;
+
+	}
+	return 0;
+}

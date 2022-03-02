@@ -1,0 +1,5 @@
+void remplir (int t[]; int dim);
+void afficher(const int t[]; int dim);
+double moyenne(const int t[],int dim);
+
+

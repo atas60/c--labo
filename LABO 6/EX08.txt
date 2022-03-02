@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int min,a,b;
+
+	cout << "entrez 10 entiers " << endl;cin>>b;
+	min=b;
+	for(b=0;b<9;b=b+1){
+		cin>>a;
+
+		if(a%2==0) {
+		if (min>a) min=a;
+
+		}
+		else {
+			cout<<" ce n'est pas un nombre pair!"<<endl;
+		}
+	}
+	cout<<"le plus petit nombre pair c'est "<<min<<endl;
+
+	return 0;
+}

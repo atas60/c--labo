@@ -1,0 +1,7 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout << "Bonjour, ça va commencer" << endl; // prints !!!Hello World!!!
+	return 0;
+}

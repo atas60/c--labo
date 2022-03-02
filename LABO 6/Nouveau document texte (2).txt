@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t1[20], t2[20], t3[20], dim, i;
+	cout <<"veuillez choisir la dimension des tables (max20)"<<endl;
+	cin>>dim;
+	while (dim <1 || dim >20) {
+		cout<<"entre 1 et 20 svp !!!"<<endl;
+		cin>>dim;
+	}
+	cout<<"entrez les "<<dim<<" de la premiere table"<<endl;
+	for (i=0; i<dim; i=i+1) {
+		cin>>t1[i];
+	}
+	cout<<"entrez les "<<dim<<" de la deuxieme table"<<endl;
+		for (i=0; i<dim; i=i+1) {
+			cin>>t2[i];
+		}
+		for (i=0; i<dim; i=i+1) {
+			t3[i]=t1[i]+t2[i];
+		}
+	for (i=0; i<dim; i=i+1) {
+		cout<<t3[i]<<endl;
+	}
+	return 0 ;
+}

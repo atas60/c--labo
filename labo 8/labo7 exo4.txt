@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t1[20],t2[20],dim,i,j;
+	cout << "Dimension de tables" << endl;
+	for (i=0; i<dim; i=i+1){
+		cin>>t1[20];
+	}
+	j=0;
+	for(i=0; i<dim; i=i+1){
+		if (t1[i]%2==0){
+			t2[j]=i;
+			j=j+1;
+		}
+	}
+	if (j==0) {
+		cout<<"pas de pair dans la table"<<endl;
+	}
+	else {
+		cout<<"les pairs sont dans les cases"<<endl;
+		for (i=0; i<dim; i=i+1){
+			cout<<t2[i]<<endl;
+		}
+	}
+	return 0;
+}

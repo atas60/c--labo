@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t[12],i;
+
+	cout << "remplissez le tableau " << endl;
+	for( i=0; i<12; i=i+1){
+		cin>>t[i];
+	}
+	for (i=0; i<12; i=i+1){
+		if (i%2==0){
+			cout<<"les indices pairs dans la table"<<endl;
+			cout<<t[i]<<endl;
+		}
+	}
+	return 0;
+}

@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int seconde;
+	cout << "entrez le nombre de seconde" << endl; cin>>seconde;
+	while (seconde<0){
+		cin>>seconde;
+	}
+	cout<<seconde/3600<<" heure "<<(seconde/60)%60<<" minute "<<seconde%60<<" seconde"<<endl;
+	return 0;
+}

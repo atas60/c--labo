@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int nb1,nb2,tmp;
+	cout<<"entrez 2 nombres";
+	cin>>nb1>>nb2;
+	if (nb2<nb1) { tmp=nb1; nb1=nb2; nb2=tmp;
+	}
+	if(nb2%2==0 && nb1%2==0){
+		cout<<" la somme de tous les entiers pairs entre ces 2 entiers "<<(nb1+nb2)*(nb2-nb1+2)/4<<endl;
+	}
+	else if (nb2%2==0 && nb1%2!=0) {
+		(nb1=nb1+1);
+		cout<<"la somme de tous les entiers pairs entre ces 2 entiers "<<(nb1+nb2)*(nb2-nb1+2)/4<<endl;
+	}
+	else if (nb2%2!=0 && nb1%2==0) {
+		(nb2=nb2-1);
+		cout<<"la somme de tous les entiers pairs entre ces 2 entiers "<<(nb1+nb2)*(nb2-nb1+2)/4<<endl;
+	}
+	else if (nb2%2!=0 && nb1%2!=0){
+		(nb1=nb1+1); (nb2=nb2-1);
+		cout<<"la somme de tous les entiers pairs entre ces 2 entiers "<<(nb1+nb2)*(nb2-nb1+2)/4<<endl;
+	}
+	return 0;
+}

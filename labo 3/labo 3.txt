@@ -1,0 +1,239 @@
+// caractere 
+
+
+#include <iostream>
+using namespace std;
+int main() {
+	char a;
+	cout << "entres un caractere" << endl; cin>>a;
+	if ( a>='A' && a<='Z')
+	{
+		cout <<" c'est une majuscule : "<<a<<endl;
+	}
+	else if (a>='a' && a<='z')
+	{
+		cout <<" c'est une minuscule : "<<a<<endl;
+	}
+	else if (a>='0' && a<='9')
+	{
+		cout <<" c'est un chiffre : "<<a<<endl;
+	}
+	else
+	{ cout<<" cest n'est pas dans la liste"<<endl;
+
+	}
+	return 0;
+}
+
+// metre carré
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int m;
+	cout <<"entrez le nombre de metre carré "; cin>>m;
+
+
+	   if ( m>0 )
+
+		   	 {
+
+
+		cout <<"vous avez "<<(m % 100)<<" centiar "<<((m / 100)%100)<<" are "<<((m/10000)%1000)<<" hectare "<<" en metre carré"<<endl;
+		   	 }
+	   else {
+	   			cout <<"erreur"<<endl;
+	   		}
+	return 0;
+	}
+
+// siecle ou pas 
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a;
+	cout << "entrez la valeur de a "; cin>>a;
+
+	if (a%100==0)
+			{
+		cout << "c'est un siecle";
+			}
+	else {
+		cout << "c'est pas un siecle";
+		}
+	return 0;
+			}
+
+
+// soustraire 2 reel version 2
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	double a,b,choix;
+	cout << "entrez le premier nombre "; cin>>a;
+	cout << "entrez le deuxieme nombre "; cin>>b;
+
+	cout << " menu de soustraction"<<endl;
+	cout << " 1. soustraire "<<a<< " de "<<b<<endl;
+	cout << " 2. soustraire "<<b<< " de "<<a<<endl;
+	cout << " quel est votre choix ?"; cin>>choix;
+	if (choix==1)
+	{ cout <<a<<" - "<<b<<" = "<<a-b<<endl;
+	}
+	else if (choix==2)
+	{ cout <<b<<" - "<<a<<" = "<<b-a<<endl;
+	}
+	else { cout <<"choix erroné"<<endl;
+
+	}
+	return 0;
+}
+
+
+
+// soustraire 2 réel
+
+
+ #include <iostream>
+using namespace std;
+
+int main() {
+	double a,b,choix;
+	cout << "entrez le premier nombre "; cin>>a;
+	cout << "entrez le deuxieme nombre "; cin>>b;
+
+	cout << " menu de soustraction"<<endl;
+	cout << " 1. soustraire "<<a<< " de "<<b<<endl;
+	cout << " 2. soustraire "<<b<< " de "<<a<<endl;
+	cout << " quel est votre choix ?"; cin>>choix;
+	if (choix==1)
+	{ cout << "la soustraction demandé est "<<a<<" - "<<b<<" = "<<a-b<<endl;
+	}
+	else if (choix==2)
+	{ cout << "la soustraction demandé est "<<b<<" - "<<a<<" = "<<b-a<<endl;
+	}
+	else { cout <<"choix erroné"<<endl;
+
+	}
+	return 0;
+}
+
+// valeur absolue d'un nombre
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a;
+
+	cout << "entrez un nombre entier" << endl; cin>>a;
+	if (a<0)
+	{ cout << "la valeur absolue du nombre est "<<a*-1<<endl;
+
+	}
+	else { cout << "la valeur abolue du nombre est "<<a<<endl;
+	}
+
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

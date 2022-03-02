@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int nb1,nb2,pgcd;
+	cout << "entre le premier nombre" << endl;cin>>nb1;
+	cout << "entre le deuxieme nombre" << endl;cin>>nb2;
+	while (nb1!=nb2){
+		if (nb1>nb2){
+			nb1=nb1-nb2;
+			}
+		else {
+			nb2=nb2-nb1;
+		}
+		pgcd=nb2;
+	}
+	cout<<"le pgcd c'est "<<pgcd<<endl;
+	return 0;
+}

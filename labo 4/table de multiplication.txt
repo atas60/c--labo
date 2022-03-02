@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a;
+	cout << "choisir la table de multiplication" << endl; cin>>a;
+	for (int b(1); b<=10; b++)
+	{ cout <<"la table choisit est "<<b<<'x'<<a<<'='<<a*b<<endl;
+
+	}
+	return 0;
+}

@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t[15],i,choix;
+
+	cout << "remplir la table" << endl;
+	for (i=0;  i<15; i=i+1){
+		cin>>t[i];
+	}
+	cout<<"entrez un nombre pour savoir si il est dans le tableau"<<endl; cin>>choix;
+	for (i=0; i<15; i=i+1){
+	if (t[i]==choix){
+		cout<<"votre recherche "<<t[i]<<endl;
+	}
+	else {
+				cout<<"le nombre recherché n'est pas dans le tableau"<<endl;
+			}
+	}
+
+	return 0;
+}

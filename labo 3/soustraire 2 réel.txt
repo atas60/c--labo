@@ -1,0 +1,23 @@
+ #include <iostream>
+using namespace std;
+
+int main() {
+	double a,b,choix;
+	cout << "entrez le premier nombre "; cin>>a;
+	cout << "entrez le deuxieme nombre "; cin>>b;
+
+	cout << " menu de soustraction"<<endl;
+	cout << " 1. soustraire "<<a<< " de "<<b<<endl;
+	cout << " 2. soustraire "<<b<< " de "<<a<<endl;
+	cout << " quel est votre choix ?"; cin>>choix;
+	if (choix==1)
+	{ cout << "la soustraction demandé est "<<a<<" - "<<b<<" = "<<a-b<<endl;
+	}
+	else if (choix==2)
+	{ cout << "la soustraction demandé est "<<b<<" - "<<a<<" = "<<b-a<<endl;
+	}
+	else { cout <<"choix erroné"<<endl;
+
+	}
+	return 0;
+}

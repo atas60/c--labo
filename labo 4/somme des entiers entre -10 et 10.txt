@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a,som;
+	cout << "entrez un entier entre -10 et 10" << endl; cin>>a;
+	som=0;
+	while (a>=-10 && a<=10) {
+		som = som+a;
+		cin>>a;
+	}
+	cout <<"la sommme des entiers entre -10 et 10 sont "<<som<<endl;
+	return 0;
+}

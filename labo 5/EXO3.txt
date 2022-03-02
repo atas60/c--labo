@@ -1,0 +1,13 @@
+int main() {
+	int a;
+	cout<<"entrez un entier"<<endl; cin>>a;
+	if (a>=1 && a<=20) {
+		if (a%2==0)
+			cout<<"c'est un nombre pair"<<endl;
+
+		else { cout<<"c'est un nombre impair"<<endl;
+
+		}
+	}
+	return 0;
+}

@@ -1,0 +1,33 @@
+PROCEDURE calcul(t1:table d'entier:bh; dim1:ENTIER:b;
+		 t2:table d'entier:b;  dim2;ENTEIR:b);
+
+
+EN C++
+
+
+voi calcul (int t1[], int dim1, const int t2[], int dim2);
+
+LDA
+
+VAR t1:TABLE DE 10 ENTIER
+    t2:TABLE DE 5  ENTIER
+    DIM2: ENTIER
+!dim2!
+remplir (t1,10)
+remplir (t2,dim)
+calcul (t1,10,t2,dim2)
+ECRIRE "resultats"
+afficher (t1,10)
+FBLOC
+------LABO10EXO2------
+PROCEDURE calcul(t1:tble d'entier:bh; dim1: ENTIER : b;
+ t2: table d'entier:b;dim2:entier:b)
+VAR i,prod:ENTIER
+prod<---1
+POUR i DE 0 A dim2-1 FAIRE
+prod<---prod*t2[i]
+FPOUR 
+POUR i DE 0 A dim-1 FAIRE
+t1[i]<--t1[i]*prod
+FPOUR
+FBLOC

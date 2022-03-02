@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int div,did,r;
+	cout << "entrez 2 entier" << endl;
+	cin>>div>>did;
+while (div<0 && did<0) {
+	cout<<"veuillez entrez des nombre superieur a 1"<<endl;
+	cin>>div>>did;
+}
+	r=did%div;
+	if (r==0) { cout<<"le PGCD c'est "<<div;
+	             }
+		else  {
+			while (r!=0){
+				did=div;
+				div=r;
+					r=did%div;
+			}
+			cout<<"le PGCD c'est "<<div<<endl;
+		}
+
+
+	return 0;
+}

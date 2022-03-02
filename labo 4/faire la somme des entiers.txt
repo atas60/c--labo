@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a,b,tmp;
+	cout << "entrez un entier" << endl; cin>>a;
+	cout <<"entrez un entier qui est superieur a la premiere"<<endl; cin>>b;
+	tmp=0;
+	while (a<b) {
+		cout <<"entrez un entier superieur a la premiere"<<endl;
+		tmp=tmp+b;
+				cin>>b;
+	}
+	cout <<"la somme des nombre superieur a la premiere est "<<tmp<<endl;
+	return 0;
+}

@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a,b,c,tmp;
+	cout << "entrez le premier nombre "; cin>>a;
+	cout << "entrez le deuxieme nombre "; cin>>b;
+	cout << "entrez le troisieme nombre "; cin>>c;
+	cout << "avant la permutation le 1er entier = "<<a<<" le 2èm entier = "<<b<< " et le 3èm entier = "<<c<<endl;
+
+	tmp = a;
+	a = b;
+	b = c;
+	c = tmp;
+
+	cout << "apres la permutation le 1er entier = "<<a<<" le 2èm entier = "<<b<< " et le 3èm entier = "<<c<< endl;
+
+	return 0;
+}

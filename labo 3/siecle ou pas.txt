@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a;
+	cout << "entrez la valeur de a "; cin>>a;
+
+	if (a%100==0)
+			{
+		cout << "c'est un siecle";
+			}
+	else {
+		cout << "c'est pas un siecle";
+		}
+	return 0;
+			}
+

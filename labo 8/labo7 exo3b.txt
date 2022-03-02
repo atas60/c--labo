@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t1[20],taille,choix,i;
+	cout << "choisir la taille de la table" << endl; cin>>taille;
+	while (taille<1 || taille>20){
+		cin>>taille;
+	}
+	cout<<"remplissez la table"<<endl;
+	for (i=0; i<taille; i=i+1){
+		cin>>t1[i];
+	}
+	cout<<"choisir un nombre et vous affichera la ou elle apparait la premiere fois dans la table"<<endl;
+	cin>>choix;
+	i=taille-1;
+	while (t1[i]!=choix && i==0 ){
+		i=i-1;
+	}
+	if (t1[i]==choix){
+		cout<<"le nombre choisit est dans t["<<i<<"] "<<choix<<endl;
+	}
+	else {
+		cout<<"le nombre choisit n'est pas dans la table"<<endl;
+	}
+	return 0;
+}

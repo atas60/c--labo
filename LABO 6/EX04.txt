@@ -1,0 +1,26 @@
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a,max;
+	cout << "entrez des entiers strictement positif pour avoir le maximum" << endl;
+	 cin>>a;
+	 max=a;
+	if (a>0){
+
+
+	while (a>0) {
+	cin>>a;
+	if (max<a) max=a;
+		}
+
+	}
+else {
+	cout<<"pas de nombre positif"<<endl;
+}
+
+
+	cout<<"le maximum est = "<<max<<endl;
+	return 0;
+}

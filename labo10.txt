@@ -1,0 +1,35 @@
+PROCEDURE remplir( t:table d'entier : hb; dim : ENTIER: b);
+PROCEDURE afficher ( t: table d'entier; b; dim: ENTIER ;b);
+REEL FONCTION moyenne(t:table d'entier:b;dim: ENTIER ;b);
+
+BLOC 
+VAR tab : TABLE DE 20 ENTIER 
+dim : ENTIER 
+8DIMENSION à valider !
+remplir(tab,dim)
+ECRIRE "moyenne de la table =" , moyenne(tab,dim)
+FBLOC
+
+PROCEDURE remplir (t:table d'entier : hb; dim: ENTIER: b)
+VAR i:ENTIER
+POUR i DE 0 A dim-1 FAIRE
+LIRE t(i)
+FPOUR
+FBLOC
+
+
+
+
+PROCEDURE AFFICHER (t:table d'entier : hb; dim: ENTIER: b)
+VAR i:ENTIER
+POUR i DE 0 A dim-1 FAIRE
+ECRIRE t(i)
+FPOUR
+FBLOC
+
+REEL FONCTION moyenne(t:table d'entier:b; dim:entier:b)
+VAR i,total:ENTIER 
+total<---0
+POUR i DE 0 A dim-1 FAIRE
+total<---total+t(i)
+FPOUR 

@@ -1,0 +1,214 @@
+// EX01
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a,b;
+	char c;
+	(c='O') ;
+	while ((c=='O') || (c=='o')){
+
+		cout << "Table de quel entier entre 1 et 20 : " << endl; cin>>a;
+	while (a<1 || a>20){ cout<<"Cette valeur n’est pas entre 1 et 20, recommencez : "<<endl; cin>>a;
+	}
+	for ( b=1; b<=10; b++)
+		{ cout <<"la table choisit "<<b<<'x'<<a<<'='<<a*b<<endl;
+
+		}
+	cout<<"Voulez-vous faire une autre table ( - O(ui) - N(on) - )"<<endl;
+	cin>>c;
+	while (c != 'N' && c!='O') && (c != 'n' && c!='o') { cout<<"Répondez O(ui) ou N(on)"<<endl;
+	cin>>c;
+	}
+
+	}
+	return 0;
+}
+
+// EX02
+#include <iostream>
+using namespace std;
+int main() {
+	int max, min,val,b;
+	cout<<"entrez 30 entiers"<<endl; cin>>b;
+	min = b;
+	max = b;
+	for (b=0; b<29; b++) { cin>>val;
+	if (max<val) max=val;
+	if (min>val) min=val;
+	}
+	cout<<"la valeur maximum est "<<max<<"la valeur minimal est "<<min<<endl;
+	return 0;
+}
+// EX03
+#include <iostream>
+using namespace std;
+
+int main() {
+	string nom,prod;
+	int quantite;
+	double total,prix,som;
+	char a;
+	cout<<"nom du client : "; cin>>nom;
+	
+	while (nom!="*") {
+		cout<<"produit : "; cin>>prod; som=0;
+		while (prod!="*") {
+		
+			cout<<"prix : "; cin>>prix;
+			cout<<"quantite"; cin>>quantite;
+			total=0;  som=(prix*quantite)+som; total=prix*quantite;
+			cout<<"prix total de l'article : "<<total<<"euro"<<endl;
+			cout<<" produit : ";
+			cin>>prod;
+		}
+		cout<<"prix total : "<<som<<endl;
+		cout<<"avez-vous une carte de fidelite o(ui) ou n(on) ? "<<endl;cin>>a; 
+
+		while (a!='o' && a!='O' && a!='n' && a!='N'){
+		cout<<"o(ui) ou n(on) ? SVP ! "<<endl;
+		cin>>a;
+		}
+		if (a=='O' || a=='o'){
+			cout<<"remise = "<<som/10<<endl;
+			cout<<" montant a payer "<<som-(som/10)<<endl;
+		}
+		else {
+			cout<<"montant a payer : "<<som<<endl;
+		}
+		
+		cout<<"nom du client : "; cin>>nom;
+	}
+	return 0;
+}
+// EX04
+#include <iostream>
+using namespace std;
+
+int main() {
+	int nb1,nb2,tmp;
+	cout<<"entrez 2 nombres";
+	cin>>nb1>>nb2;
+	if (nb2<nb1) { tmp=nb1; nb1=nb2; nb2=tmp;
+	}
+	if(nb2%2==0 && nb1%2==0){
+		cout<<" la somme de tous les entiers pairs entre ces 2 entiers "<<(nb1+nb2)*(nb2-nb1+2)/4<<endl;
+	}
+	else if (nb2%2==0 && nb1%2!=0) {
+		(nb1=nb1+1);
+		cout<<"la somme de tous les entiers pairs entre ces 2 entiers "<<(nb1+nb2)*(nb2-nb1+2)/4<<endl;
+	}
+	else if (nb2%2!=0 && nb1%2==0) {
+		(nb2=nb2-1);
+		cout<<"la somme de tous les entiers pairs entre ces 2 entiers "<<(nb1+nb2)*(nb2-nb1+2)/4<<endl;
+	}
+	else if (nb2%2!=0 && nb1%2!=0){
+		(nb1=nb1+1); (nb2=nb2-1);
+		cout<<"la somme de tous les entiers pairs entre ces 2 entiers "<<(nb1+nb2)*(nb2-nb1+2)/4<<endl;
+	}
+	return 0;
+}
+
+// EX05
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int nb1,nb2,tmp;
+	cout<<"entrez 2 nombres";
+	cin>>nb1>>nb2;
+	if (nb2<nb1) { tmp=nb1; nb1=nb2; nb2=tmp;
+	}
+	if(nb2%2==0 && nb1%2==0){
+		cout<<" la somme de tous les entiers pairs entre ces 2 entiers "<<(nb1+nb2)*(nb2-nb1+2)/4<<endl;
+	}
+	else if (nb2%2==0 && nb1%2!=0) {
+		(nb1=nb1+1);
+		cout<<"la somme de tous les entiers pairs entre ces 2 entiers "<<(nb1+nb2)*(nb2-nb1+2)/4<<endl;
+	}
+	else if (nb2%2!=0 && nb1%2==0) {
+		(nb2=nb2-1);
+		cout<<"la somme de tous les entiers pairs entre ces 2 entiers "<<(nb1+nb2)*(nb2-nb1+2)/4<<endl;
+	}
+	else if (nb2%2!=0 && nb1%2!=0){
+		(nb1=nb1+1); (nb2=nb2-1);
+		cout<<"la somme de tous les entiers pairs entre ces 2 entiers "<<(nb1+nb2)*(nb2-nb1+2)/4<<endl;
+	}
+	return 0;
+}
+
+// EX06
+#include <iostream>
+using namespace std;
+
+int main() {
+	int div,did,r;
+	cout << "entrez 2 entier" << endl;
+	cin>>div>>did;
+while (div<0 && did<0) {
+	cout<<"veuillez entrez des nombre superieur a 1"<<endl;
+	cin>>div>>did;
+}
+	r=did%div;
+	if (r==0) { cout<<"le PGCD c'est "<<div;
+	             }
+		else  {
+			while (r!=0){
+				did=div;
+				div=r;
+					r=did%div;
+			}
+			cout<<"le PGCD c'est "<<div<<endl;
+		}
+
+
+	return 0;
+}
+// EX07
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int nb1,nb2,pgcd;
+	cout << "entre le premier nombre" << endl;cin>>nb1;
+	cout << "entre le deuxieme nombre" << endl;cin>>nb2;
+	while (nb1!=nb2){
+		if (nb1>nb2){
+			nb1=nb1-nb2;
+			}
+		else {
+			nb2=nb2-nb1;
+		}
+		pgcd=nb2;
+	}
+	cout<<"le pgcd c'est "<<pgcd<<endl;
+	return 0;
+}
+// EXO8
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int min,a,b;
+
+	cout << "entrez 10 entiers " << endl;cin>>b;
+	min=b;
+	for(b=0;b<9;b=b+1){
+		cin>>a;
+
+		if(a%2==0) {
+		if (min>a) min=a;
+
+		}
+		else {
+			cout<<" ce n'est pas un nombre pair!"<<endl;
+		}
+	}
+	cout<<"le plus petit nombre pair c'est "<<min<<endl;
+
+	return 0;
+}

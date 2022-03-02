@@ -1,0 +1,2 @@
+PROCEDURE ajout(t:table d'entier:bh;dim:ENTIER:bh ; el : ENTIER :b)
+!encore de la place(dim<taille reservé)!

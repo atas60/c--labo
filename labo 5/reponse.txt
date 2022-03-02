@@ -1,0 +1,4 @@
+REPONSES
+1)les negatif,réels et les positives
+2)ou lire la variable avec le while et si je dois faire une boucle ou pas
+si oui est ce que j'ai besoin de if.

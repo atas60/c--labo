@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a,b,c;
+
+	cout << "entrez le premier nombre " << endl; cin >>a;// prints !!!Hello World!!!
+	cout << "entrez le deuxieme nombre " << endl; cin >>b;
+	cout << "entrez le troisieme nombre " << endl; cin >>c;
+	cout << "la somme de "<<a<<" et "<<b<<" vaut "<<a+b<< endl;
+	cout << "la multiplication de "<<b<<" et "<<c<<"vaut "<<b*c<< endl;
+	return 0;
+}

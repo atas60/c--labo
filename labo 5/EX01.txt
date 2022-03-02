@@ -1,0 +1,24 @@
+#include <math.h>
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a,b,c,D;
+	cout <<"veuillez entrer 3 entiers"<<endl; cin>>a>>b>>c;
+	if (a!=0) {
+		(D=(b*b)-4*a*c);
+		if (D>0) {
+			cout<<"2 solutions "<<(-b+sqrt(D))/(2.0*a) << " et " << (-b-sqrt(D))/(2.0*a)<<endl;
+		}
+			else if  (D==0){
+				cout<<" 1 solution "<<(-b)/(2.0*a);
+			}
+			else  {
+				cout<<"pas de solution"<<endl;
+			}
+		}
+	else  {
+		cout<<"cette equation n'est pas du second degré"<<endl;
+	}
+	return 0;
+}

@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a;
+
+	cout << "entrez un nombre entier" << endl; cin>>a;
+	if (a<0)
+	{ cout << "la valeur absolue du nombre est "<<a*-1<<endl;
+
+	}
+	else { cout << "la valeur abolue du nombre est "<<a<<endl;
+	}
+
+	return 0;
+}

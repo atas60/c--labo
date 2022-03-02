@@ -1,0 +1,492 @@
+// 3 entiers version 1
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a,b,c;
+	cout <<"entrez le premier nombre : "; cin>>a;
+	cout <<"entrez le deuxieme nombre  : "; cin>>b;
+	cout <<"entrez le troisieme nombre  : "; cin>>c;
+	cout <<"la sommes des 2 premiers = "<<a+b<< endl;
+	cout <<"et la multiplication des deux derniers = "<<b*c<< endl;
+	return 0;
+}
+
+
+// 3 entiers version 2
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a,b,c;
+
+	cout << "entrez le premier nombre " << endl; cin >>a;// prints !!!Hello World!!!
+	cout << "entrez le deuxieme nombre " << endl; cin >>b;
+	cout << "entrez le troisieme nombre " << endl; cin >>c;
+	cout << "la somme de "<<a<<" et "<<b<<" vaut "<<a+b<< endl;
+	cout << "la multiplication de "<<b<<" et "<<c<<"vaut "<<b*c<< endl;
+	return 0;
+}
+
+
+// 3 entiers version 3
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a,b,c;
+
+	cout <<"entrez le premier nombre " << endl; cin>>a;
+	cout <<"entrez le deuxieme nombre" << endl; cin>>b;
+	cout <<"entrez le troisieme nombre" << endl; cin>>c;
+	cout <<a<<"+"<<b<<"="<<a+b<< endl;
+	cout <<b<<"x"<<c<<"="<<b*c<< endl;
+	return 0;
+}
+
+// bonjour
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout << "Bonjour, ça va commencer" << endl; // prints !!!Hello World!!!
+	return 0;
+}
+
+// permutation version 1
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a,b,c,tmp;
+	cout << "entrez le premier nombre "; cin>>a;
+	cout << "entrez le deuxieme nombre "; cin>>b;
+	cout << "entrez le troisieme nombre "; cin>>c;
+	cout << "avant la permutation le 1er entier = "<<a<<" le 2èm entier = "<<b<< " et le 3èm entier = "<<c<<endl;
+
+	tmp = a;
+	a = b;
+	b = c;
+	c = tmp;
+
+	cout << "apres la permutation le 1er entier = "<<a<<" le 2èm entier = "<<b<< " et le 3èm entier = "<<c<< endl;
+
+	return 0;
+}
+
+
+
+// permutation version 2
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a,b,c,tmp;
+
+	cout << "entrez le premier nombre " << endl; cin>>a;
+	cout << "entrez le deuxieme nombre "<< endl; cin>>b;
+	cout << "entrez le troisieme nombre "<< endl;cin>>c;
+	cout <<"avant la permutation, le 1er entier = "<<a<<" le 2èm entier = "<<b<<" le 3 èm entier = "<<c<< endl;
+
+	tmp = a;
+	a = c;
+	c = b;
+	b = tmp;
+
+	cout <<"apres la permutation, le 1er entier = "<<a<<" le 2èm entier = "<<b<<" le 3 èm entier = "<<c<< endl;
+
+	return 0;
+}
+
+// labo 3
+
+
+// caractere 
+
+
+#include <iostream>
+using namespace std;
+int main() {
+	char a;
+	cout << "entres un caractere" << endl; cin>>a;
+	if ( a>='A' && a<='Z')
+	{
+		cout <<" c'est une majuscule : "<<a<<endl;
+	}
+	else if (a>='a' && a<='z')
+	{
+		cout <<" c'est une minuscule : "<<a<<endl;
+	}
+	else if (a>='0' && a<='9')
+	{
+		cout <<" c'est un chiffre : "<<a<<endl;
+	}
+	else
+	{ cout<<" cest n'est pas dans la liste"<<endl;
+
+	}
+	return 0;
+}
+
+// metre carré
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int m;
+	cout <<"entrez le nombre de metre carré "; cin>>m;
+
+
+	   if ( m>0 )
+
+		   	 {
+
+
+		cout <<"vous avez "<<(m % 100)<<" centiar "<<((m / 100)%100)<<" are "<<((m/10000)%1000)<<" hectare "<<" en metre carré"<<endl;
+		   	 }
+	   else {
+	   			cout <<"erreur"<<endl;
+	   		}
+	return 0;
+	}
+
+// siecle ou pas 
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a;
+	cout << "entrez la valeur de a "; cin>>a;
+
+	if (a%100==0)
+			{
+		cout << "c'est un siecle";
+			}
+	else {
+		cout << "c'est pas un siecle";
+		}
+	return 0;
+			}
+
+
+// soustraire 2 reel version 2
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	double a,b,choix;
+	cout << "entrez le premier nombre "; cin>>a;
+	cout << "entrez le deuxieme nombre "; cin>>b;
+
+	cout << " menu de soustraction"<<endl;
+	cout << " 1. soustraire "<<a<< " de "<<b<<endl;
+	cout << " 2. soustraire "<<b<< " de "<<a<<endl;
+	cout << " quel est votre choix ?"; cin>>choix;
+	if (choix==1)
+	{ cout <<a<<" - "<<b<<" = "<<a-b<<endl;
+	}
+	else if (choix==2)
+	{ cout <<b<<" - "<<a<<" = "<<b-a<<endl;
+	}
+	else { cout <<"choix erroné"<<endl;
+
+	}
+	return 0;
+}
+
+
+
+// soustraire 2 réel
+
+
+ #include <iostream>
+using namespace std;
+
+int main() {
+	double a,b,choix;
+	cout << "entrez le premier nombre "; cin>>a;
+	cout << "entrez le deuxieme nombre "; cin>>b;
+
+	cout << " menu de soustraction"<<endl;
+	cout << " 1. soustraire "<<a<< " de "<<b<<endl;
+	cout << " 2. soustraire "<<b<< " de "<<a<<endl;
+	cout << " quel est votre choix ?"; cin>>choix;
+	if (choix==1)
+	{ cout << "la soustraction demandé est "<<a<<" - "<<b<<" = "<<a-b<<endl;
+	}
+	else if (choix==2)
+	{ cout << "la soustraction demandé est "<<b<<" - "<<a<<" = "<<b-a<<endl;
+	}
+	else { cout <<"choix erroné"<<endl;
+
+	}
+	return 0;
+}
+
+// valeur absolue d'un nombre
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a;
+
+	cout << "entrez un nombre entier" << endl; cin>>a;
+	if (a<0)
+	{ cout << "la valeur absolue du nombre est "<<a*-1<<endl;
+
+	}
+	else { cout << "la valeur abolue du nombre est "<<a<<endl;
+	}
+
+	return 0;
+}
+
+
+		// LABO 4
+ // faire la somme des entiers
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a,b,tmp;
+	cout << "entrez un entier" << endl; cin>>a;
+	cout <<"entrez un entier qui est superieur a la premiere"<<endl; cin>>b;
+	tmp=0;
+	while (a<b) {
+		cout <<"entrez un entier superieur a la premiere"<<endl;
+		tmp=tmp+b;
+				cin>>b;
+	}
+	cout <<"la somme des nombre superieur a la premiere est "<<tmp<<endl;
+	return 0;
+}
+
+
+// les secondes
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int seconde;
+	cout << "entrez le nombre de seconde" << endl; cin>>seconde;
+	while (seconde<0){
+		cin>>seconde;
+	}
+	cout<<seconde/3600<<" heure "<<(seconde/60)%60<<" minute "<<seconde%60<<" seconde"<<endl;
+	return 0;
+}
+
+// lire 10 entiers au clavier
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a,som;
+	cout << "entrez 10 entiers" << endl;
+	som=0;
+	for (int b(0); b < 9 ; b++)
+	{
+		cin>>a;
+		som=som+a;
+	}
+	cout <<"la somme des 10 entiers est"<<som<<endl;
+	return 0;
+}
+
+
+// question reponsse
+
+// labo 4 question/reponse
+
+// 1) les negatifs, nul, et les réels
+// 2)oui il faut juste changer while (a<b)---->while (a>b)
+// 3)oui il faut juste changer une ligne for (int b(0); b < 10; b++)---->for (int b(0); b < 1000; b++)
+
+
+// somme des entiers entre -10 et 10
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a,som;
+	cout << "entrez un entier entre -10 et 10" << endl; cin>>a;
+	som=0;
+	while (a>=-10 && a<=10) {
+		som = som+a;
+		cin>>a;
+	}
+	cout <<"la sommme des entiers entre -10 et 10 sont "<<som<<endl;
+	return 0;
+}
+
+
+// table de multiplication
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a;
+	cout << "choisir la table de multiplication" << endl; cin>>a;
+	for (int b(1); b<=10; b++)
+	{ cout <<"la table choisit est "<<b<<'x'<<a<<'='<<a*b<<endl;
+
+	}
+	return 0;
+}
+
+
+		// LABO 5
+// EX01 
+
+#include <math.h>
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a,b,c,D;
+	cout <<"veuillez entrer 3 entiers"<<endl; cin>>a>>b>>c;
+	if (a!=0) {
+		(D=(b*b)-4*a*c);
+		if (D>0) {
+			cout<<"2 solutions "<<(-b+sqrt(D))/(2.0*a) << " et " << (-b-sqrt(D))/(2.0*a)<<endl;
+		}
+			else if  (D==0){
+				cout<<" 1 solution "<<(-b)/(2.0*a);
+			}
+			else  {
+				cout<<"pas de solution"<<endl;
+			}
+		}
+	else  {
+		cout<<"cette equation n'est pas du second degré"<<endl;
+	}
+	return 0;
+}
+
+// EX02
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a;
+	cout << "entrez un chiffre entre 1 et 20" << endl; cin>>a;
+	while (a<1 || a>20) {
+		cout<<"ce nest pas un chiffre entre 1 et 20 essayez a nouveau !"<<endl; cin>>a;
+	}
+		if  (a%2==0)
+		{ cout<<"c'est un chiffre pair"<<endl;
+		}
+		else
+		{ cout <<"c'est un chiffre impair"<<endl;
+		}
+	return 0;
+}
+
+// EX03 
+
+int main() {
+	int a;
+	cout<<"entrez un entier"<<endl; cin>>a;
+	if (a>=1 && a<=20) {
+		if (a%2==0)
+			cout<<"c'est un nombre pair"<<endl;
+
+		else { cout<<"c'est un nombre impair"<<endl;
+
+		}
+	}
+	return 0;
+}
+
+// EX04
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a,som;
+	double nb;
+	cout << "entrez des réelles" << endl; cin>>a;
+	som=0;
+	nb=0;
+	while (a!=0) {
+		som=som+a; cin>>a;
+		nb++;
+
+	if (a==0) {
+		cout<<"la moyenne des entier est "<<som/(nb*1.0)<<endl;
+	}	
+else { cout<<"pas de moyenne"<<endl;}
+}
+	return 0;
+}
+
+// EX05
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a;
+	cout << "entrez 20 entiers" << endl;
+	a=0;
+	for (int b(0); b<20; b++)
+	{
+		cin>>a;
+		if (a%2==0){
+			cout<<"c'est un nombre pair"<<endl;
+		}
+		else {
+			cout <<"c'est un nombre impair"<<endl;
+	}
+	}
+
+	return 0;
+}
+
+// EX06
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a;
+	cout << "entrez un entier" << endl; cin>>a;
+	while (a>=1 && a<=20){
+
+		if (a%2==0){ cout<<"c'est un nombre pair"<<endl;
+		}
+		else{ cout<<"c'est un nombre impair"<<endl;
+		}
+		cin>>a;
+
+	}
+	return 0;
+}
+
+// QUESTION REPONSE -- REPONSES
+// 1)les negatif,réels et les positives
+// 2)ou lire la variable avec le while et si je dois faire une boucle ou pas
+// si oui est ce que j'ai besoin de if.

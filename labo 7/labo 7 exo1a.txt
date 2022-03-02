@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t[10],i;
+	for (i=0; i<10;i=i+1){
+		t[i]=i+1;
+	}
+	cout<<"voici la table "<<endl;
+	for (i=0; i<10; i=i+1){
+		cout<<"t["<<i<<"] = "<<t[i]<<endl;
+	}
+	return 0;
+}
